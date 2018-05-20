@@ -6,9 +6,8 @@
         <router-link tag='div' to="home" class="navItem">首页</router-link>
       </div>
       <div class="subNavSec">
-        <router-link tag='div' to="shop" class="navItem">商城</router-link>
         <router-link tag='div' to="shoppage" class="navItem">商城New</router-link>
-        <router-link tag='div' to="shop" class="navItem">登陆/注册</router-link>
+        <router-link tag='div' to="rgsorlg" class="navItem">登陆/注册</router-link>
       </div>
     </b-navbar>
   </div>
@@ -61,6 +60,7 @@ export default {
   max-width: 140px;
   margin-left: 30px;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .mainNavSec .navItem {

@@ -32,20 +32,20 @@ export default {
                     linkStr:"更多 >>"
                },
                {
-                    title: "居民健康档案",
+                    title: "¥ 100.00",
                     desr: "商品描述here",
                     imgStr:"http://www.hezhongyimeng.com/nmip/medical/images/index/shop3.png",
                     linkStr:"更多 >>"
                },
                {
-                    title: "风险评估报告",
-                    desr: "由中华预防医学会提供专业风险评估报告，全面评估各类型疾病的发病风险",
+                    title: "¥ 100.00",
+                    desr: "商品描述here",
                     imgStr:"http://www.hezhongyimeng.com/nmip/medical/images/index/shop1.png",
                     linkStr:"更多 >>"
                },
                {
-                    title: "全面干预方案",
-                    desr: "由301医院等国内外多家机构提供的权威解决方案，运动营养心理全面呵护您的健康",
+                    title: "¥ 100.00",
+                    desr: "商品描述here",
                     imgStr:"http://www.hezhongyimeng.com/nmip/medical/images/index/shop2.png",
                     linkStr:"更多 >>"
                }

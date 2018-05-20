@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../pages/HomePage'
-import Shop from '../components/Shop'
+import HomePage from '../pages/HomePage'
+import RegisterOrLoginPage from '../pages/RegisterOrLoginPage'
 import NvgPage from '../pages/NavigatePage'
 import ShopPage from '../pages/ShopPage'
 
@@ -26,13 +26,13 @@ export default new Router({
         {
           path: '/home',
           name: 'home',
-          component: Home
+          component: HomePage
         },
-      // {
-      //   path: '/shop',
-      //   name: 'Shop',
-      //   component: Shop
-      // },
+        {
+          path: '/rgsorlg',
+          name: '登陆or注册',
+          component: RegisterOrLoginPage
+        },
         {
          path: '/shoppage',   
          name: 'shoppage',
