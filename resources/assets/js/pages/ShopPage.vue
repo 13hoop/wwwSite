@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 .shopSec {
-
+    background: #eee;
 }
 
 .pageBar {
