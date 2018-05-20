@@ -2,9 +2,14 @@
 <div>
   <div class="nvgSec">
     <b-navbar toggleable="md" variant="dark" class="headerNvg">
-      <router-link to="home">首页</router-link>
-      <router-link to="shop">商城</router-link>
-      <router-link to="shoppage">商城New</router-link>
+      <div class="mainNavSec">
+        <router-link tag='div' to="home" class="navItem">首页</router-link>
+      </div>
+      <div class="subNavSec">
+        <router-link tag='div' to="shop" class="navItem">商城</router-link>
+        <router-link tag='div' to="shoppage" class="navItem">商城New</router-link>
+        <router-link tag='div' to="shop" class="navItem">登陆/注册</router-link>
+      </div>
     </b-navbar>
   </div>
   <router-view></router-view>
@@ -28,8 +33,43 @@ export default {
   width: 100%;
   /* background: #fff; */
   height: 70px;
-  color: white;
+  display: flex;
 }
+
+.headerNvg > div {
+  height: 100%;
+}
+
+.mainNavSec {
+  min-width: 100px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subNavSec {
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.headerNvg .navItem {
+  color: white;
+  min-width: 100px;
+  max-width: 140px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.mainNavSec .navItem {
+    border:1px solid white;
+    font-size: 20px;
+    margin: auto;
+    justify-content:center;
+}
+
 </style>
 
 
