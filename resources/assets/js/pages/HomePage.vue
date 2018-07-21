@@ -16,6 +16,8 @@ import CardList from '../components/CardListCmp'
 import FooterSec from '../components/FooterCardCmp'
 import SetpSec from '../components/StepSecCmp'
 
+import API from '../router/API'
+
 export default {
   name: 'homePage',
   data () {
@@ -24,6 +26,19 @@ export default {
       titleStr: '首页',
     }
   },
+  mounted: function(){
+
+      //  console.log(arguments.callee.name)
+
+       this.$http.get(
+           API.goodURL
+       ).then((resposnse) => {
+           console.log(resposnse)
+       }).catch((error) => {
+          console.log(error)
+
+       })
+   },
   components: {
     'CarouselCmp': CarouselCmp,
     'CardList': CardList,

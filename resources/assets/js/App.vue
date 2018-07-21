@@ -6,10 +6,15 @@
 
 <script>
 import NvgPage from './pages/NavigatePage.vue'
+
 export default {
   name: 'app',
   components: {
     'nvg-page': NvgPage
+  },
+  updated() {
+  },
+  methods: {
   }
 }
 </script>

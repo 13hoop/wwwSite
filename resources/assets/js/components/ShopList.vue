@@ -42,6 +42,19 @@ export default {
            ]
        }
    },
+   mounted: function(){
+
+       console.log(arguments.callee.name)
+
+       this.$http.get(
+           API.goodURL
+       ).then((resposnse) => {
+           console.log(resposnse)
+       }).catch((error) => {
+          console.log(error)
+
+       })
+   },
    components: {
 
    }

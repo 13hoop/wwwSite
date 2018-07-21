@@ -17,21 +17,26 @@
 import Vue from 'vue'
 import BootstrapVue from "bootstrap-vue"
 import App from './App'
-// import router from './router'
+import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import axios from 'axios'
 
-Vue.use(ElementUI);
+Vue.use(router)
 Vue.use(BootstrapVue)
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
-
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
-import router from './router/index.js';
+const axiosGloble = axios.create({
+  timeout: 3000,
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+    'Content-Type': 'multipart/form-data'
+    }
+})
+Vue.prototype.$http = axios
 
 const app = new Vue({
     el: '#app',
