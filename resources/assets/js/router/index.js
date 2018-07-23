@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage'
 import RegisterOrLoginPage from '../pages/RegisterOrLoginPage'
 import NvgPage from '../pages/NavigatePage'
 import ShopPage from '../pages/ShopPage'
+import ProfilePage from '../pages/ProfilePage'
 
 Vue.use(Router)
 
@@ -37,6 +38,11 @@ export default new Router({
          path: '/shoppage',   
          name: 'shoppage',
          component: ShopPage
+        },
+        {
+          path: '/profile',
+          name: 'profile',
+          component: ProfilePage
         }
       ]
     }

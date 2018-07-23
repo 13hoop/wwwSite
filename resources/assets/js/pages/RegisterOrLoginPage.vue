@@ -139,7 +139,9 @@ export default {
             // user.authenticated = true
             
             // redirect
-            console.log('routere herer ', router)
+            console.log('跳转到profile ？')
+            console.log(this.$router)
+            this.$router.push('/profile')
           }
         }).catch( (error) => {
           console.log(error)
